@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="7cfc1522-722f-431c-8a43-2788e749208a" name="Server" url="http://ckkserver.loc/">
+        <fileTransfer mountedRoot="G:\Programing\CkkServer" accessType="MOUNT" port="0" />
+      </webServer>
+    </option>
+  </component>
+</project>

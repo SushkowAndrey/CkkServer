@@ -1,0 +1,28 @@
+.wrapper{
+    background-color: #f7f7f7;
+}
+
+.wrapper, #navigation, #header, #footer{
+    min-width: 768px;
+}
+
+.aside h2 {
+    font-size: 0.95em;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.aside h3 {
+    font-size: 0.85em;
+    margin-top: 10px;
+}
+
+.aside p, .aside li {
+    font-size: .75em;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.aside li{
+    list-style-type: none;
+}
