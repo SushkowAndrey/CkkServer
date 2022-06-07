@@ -3,9 +3,11 @@
 <head>
     <meta charset="utf-8">
     <title>ЦККиСЛС</title>
-    <link rel="stylesheet" href="css/CommonStylesMain.css">
-    <link rel="stylesheet" href="css/CommonStylesClasses.css">
-    <link rel="stylesheet" href="css/CommonStylesIdentifiers.css">
+    <link rel="stylesheet" href="css/commonStylesMain.css">
+    <link rel="stylesheet" href="css/commonStylesClasses.css">
+    <link rel="stylesheet" href="css/commonStylesIdentifiers.css">
+    <link rel="stylesheet" href="css/commonStyle.css">
+    <script src="js/autorization-script.jsx"></script>
 </head>
 <body>
 <div id="header">
@@ -13,14 +15,14 @@
     <div id="navigation">
         <ul>
             <li><a href="#">Главная</a></li>
-            <li><a href="#">Регистрация</a></li>
+            <li><a href="#">О центре</a></li>
+            <li><a href="/authorization.php">Регистрация</a></li>
             <li><a href="#">Для организаций</a></li>
             <li><a href="#">Форум</a></li>
             <li><a href="#">Контакты</a></li>
             <li><a href="#">ЛИС СПЕКТР-Альфа</a></li>
             <li><a href="#">Администратор</a></li>
-            <li><a href="#">О сайте</a></li>
-            <li><a href="/pages/ForDeveloper.php">Для разработчика</a></li>
+            <li><a href="/for-developer.php">Для разработчика</a></li>
         </ul>
     </div>
 </div>
@@ -66,6 +68,7 @@
             необходимость.</p>
     </div>
 </div>
+<div id="counterfeitСontrol">Контроль-Фальсификат - <a href="http://www.medbrak.ru/" target="_blank">Перейти</a></div>
 <div id="footer">
     <p>Contacts: andreysushkow@mail.ru</p>
     <p>Copyright © andreysushkow@mail.ru, 2022</p>
