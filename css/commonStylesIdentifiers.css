@@ -46,7 +46,7 @@
 }
 
 #navigation ul {
-    max-width: 1500px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -106,4 +106,9 @@
     border-top: 1px solid #ccc;
     font-size: 1.3em;
     text-align: center;
+}
+
+#nameUser{
+    margin-right: 10px;
+    text-align: right;
 }

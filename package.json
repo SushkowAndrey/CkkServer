@@ -1,0 +1,19 @@
+{
+  "name": "ckkserver",
+  "version": "1.0.0",
+  "description": "Сервер ЦКК (инициализация)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SushkowAndrey/CkkServer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SushkowAndrey/CkkServer/issues"
+  },
+  "homepage": "https://github.com/SushkowAndrey/CkkServer#readme"
+}
