@@ -1,17 +1,16 @@
 <?php
 session_start();
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <title>Фарм-Ревизор Онлайн</title>
-    <link rel="stylesheet" href="css/commonStylesMain.css">
-    <link rel="stylesheet" href="css/commonStylesClasses.css">
-    <link rel="stylesheet" href="css/commonStylesIdentifiers.css">
-    <link rel="stylesheet" href="css/styleModalWindow.css">
-    <script src="js/autorization-script.jsx"></script>
+    <link rel="stylesheet" href="css/common-styles-main.css">
+    <link rel="stylesheet" href="css/common-styles-classes.css">
+    <link rel="stylesheet" href="css/common-styles-identifiers.css">
+    <link rel="shortcut icon" href="/img/main.ico" type="image/x-icon">
+
 </head>
 <body>
 <div id="header">
@@ -69,6 +68,7 @@ session_start();
     <p>Contacts: andreysushkow@mail.ru</p>
     <p>Copyright © andreysushkow@mail.ru, 2022</p>
 </div>
+<script src="js/autorization-script.jsx"></script>
 </body>
 </html>
 

@@ -8,8 +8,19 @@
 <div id="appAuthorization" class="container"></div>
 
 <?php
+
+include_once('php/db-connect-autorization.php');
+
+$connect = new ConnectAutorization();
+$connect -> connect();
+if ($connect === false) {
+    die("Ошибка: " . mysqli_connect_error());
+    return;
+}
+
 if (isset($_POST['authorization'])) {
-    if($_POST['emailAuthorization'] == "test@test.ru"&& $_POST['passwordAuthorization'] =="0000") {
+
+    if($connect -> CheckUser($_POST['emailAuthorization'], $_POST['passwordAuthorization']) != null) {
         session_start();
         $_SESSION["nameUser"] = $_POST['emailAuthorization'];
         $new_url = '/index.php';

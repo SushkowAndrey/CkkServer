@@ -9,19 +9,26 @@
 
 <?php
 
+include_once('php/db-connect-autorization.php');
+
 if (isset($_POST['registration'])) {
 
-    if(!CheckUniqueness ($_POST['emailRegistration']))
+    $connect = new ConnectAutorization();
+    if(!$connect->CheckUniqueness ($_POST['emailRegistration']))
     {
         return;
     }
-    if (Register($_POST['emailRegistration'], $_POST['passwordRegistration'], $_POST['passwordRepeatRegistration'])) {
-        AddNewUser($_POST['emailRegistration'], $_POST['passwordRegistration']);
+    if (Register($_POST['nameRegistration'], $_POST['emailRegistration'], $_POST['passwordRegistration'], $_POST['passwordRepeatRegistration'])) {
+
+        $resultAdd = $connect->AddUser($_POST['nameRegistration'], $_POST['emailRegistration'], $_POST['passwordRegistration']);
+        if($resultAdd){
+            '<div class="alert alert-success" role="alert">Регистрация успешна<a href="#" class="alert-link">Вернуться на главную</a></div>';
+        }
     }
 }
 
-function Register($login, $password, $confpass) {
-    if($login == '' || $password == '' || $confpass =='') {
+function Register($name, $login, $password, $confpass) {
+    if($name == '' || $login == '' || $password == '' || $confpass =='') {
         echo '<h3><span class="alert alert-danger">Все поля должны быть заполнены!</span></h3>';
         return false;
     }
@@ -37,15 +44,6 @@ function Register($login, $password, $confpass) {
         echo '<h3><span class="alert alert-danger">Пароли не совпадают</h3>';
         return false;
     }
-    return true;
-}
-
-function AddNewUser($login, $password) {
-    $file = fopen('users.txt', 'a+');
-    $line = $login.':'.md5($password)."\r\n";
-    fputs($file, $line);
-    fclose($file);
-    echo '<h3><span class="alert alert-success">Пользователь добавлен!</span></h3>';
     return true;
 }
 
