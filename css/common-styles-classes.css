@@ -26,3 +26,9 @@
 .aside li{
     list-style-type: none;
 }
+
+.counterfeitControl {
+    border-top: 1px solid #ccc;
+    font-size: 1.3em;
+    text-align: center;
+}
